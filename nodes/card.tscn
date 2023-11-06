@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://ci4myy2qrqncm"]
+
+[sub_resource type="Gradient" id="Gradient_4pqin"]
+offsets = PackedFloat32Array(0, 0.316129, 0.664516, 1)
+colors = PackedColorArray(0.0862745, 0.0862745, 0.0862745, 0, 0.0862745, 0.0862745, 0.0862745, 0.509804, 0.0862745, 0.0862745, 0.0862745, 0.509804, 0.0862745, 0.0862745, 0.0862745, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_fq1ro"]
+gradient = SubResource("Gradient_4pqin")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xsgyt"]
+texture = SubResource("GradientTexture2D_fq1ro")
+
+[sub_resource type="Theme" id="Theme_mujvo"]
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_xsgyt")
+
+[node name="card" type="Node2D"]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_mujvo")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/GridContainer"]
+layout_mode = 2
