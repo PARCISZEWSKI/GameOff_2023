@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=4 format=3 uid="uid://hhpmuodgunsr"]
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://hhpmuodgunsr"]
 
 [sub_resource type="Gradient" id="Gradient_4pqin"]
 offsets = PackedFloat32Array(0, 0.187097, 0.806452, 1)
@@ -7,8 +7,12 @@ colors = PackedColorArray(0.0862745, 0.0862745, 0.0862745, 0, 0.0862745, 0.08627
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_fq1ro"]
 gradient = SubResource("Gradient_4pqin")
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nfrbe"]
+texture = SubResource("GradientTexture2D_fq1ro")
+
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xsgyt"]
 texture = SubResource("GradientTexture2D_fq1ro")
 
 [resource]
+Panel/styles/panel = SubResource("StyleBoxTexture_nfrbe")
 PanelContainer/styles/panel = SubResource("StyleBoxTexture_xsgyt")

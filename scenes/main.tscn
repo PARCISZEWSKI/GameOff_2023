@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbii4ugrdfk6b"]
+
+[ext_resource type="Texture2D" uid="uid://nqnyo7c0ycaj" path="res://assets/visual/gameJ.png" id="1_h4o43"]
+[ext_resource type="PackedScene" uid="uid://c7fr42v7wxy6r" path="res://nodes/card.tscn" id="2_kewk0"]
+
+[node name="main" type="Node2D"]
+
+[node name="GameJ" type="Sprite2D" parent="."]
+position = Vector2(980, 425)
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("1_h4o43")
+
+[node name="card" parent="." instance=ExtResource("2_kewk0")]
+offset_left = 720.0
+offset_top = 155.0
+offset_right = 1281.0
+offset_bottom = 954.0

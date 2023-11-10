@@ -1,47 +1,48 @@
-[gd_scene load_steps=3 format=3 uid="uid://ci4myy2qrqncm"]
+[gd_scene load_steps=4 format=3 uid="uid://c7fr42v7wxy6r"]
 
-[ext_resource type="Texture2D" uid="uid://co2niju0bnmhu" path="res://assets/visual/Person_icon_BLACK-01.svg.png" id="1_fa07b"]
 [ext_resource type="Theme" uid="uid://hhpmuodgunsr" path="res://assets/card.tres" id="1_si7q2"]
+[ext_resource type="Texture2D" uid="uid://co2niju0bnmhu" path="res://assets/visual/Person_icon_BLACK-01.svg.png" id="2_8wgxt"]
+[ext_resource type="Script" path="res://scripts/card.gd" id="2_i3pfs"]
 
-[node name="card" type="Node2D"]
-
-[node name="PanelContainer" type="PanelContainer" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -101.0
-offset_top = -20.0
-offset_right = 103.0
-offset_bottom = 187.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="card" type="PanelContainer"]
+offset_right = 561.0
+offset_bottom = 799.0
 theme = ExtResource("1_si7q2")
+script = ExtResource("2_i3pfs")
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 2
-theme_override_constants/margin_left = 40
-theme_override_constants/margin_top = 40
-theme_override_constants/margin_right = 40
-theme_override_constants/margin_bottom = 40
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
 
-[node name="CenterContainer" type="CenterContainer" parent="PanelContainer/MarginContainer"]
-layout_mode = 2
-
-[node name="GridContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/CenterContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/CenterContainer/GridContainer"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="PanelContainer/MarginContainer/CenterContainer/GridContainer/MarginContainer"]
-layout_mode = 2
-text = "swaggaer sdasdsad safsafsa sadsaasf fdfda sd sfsa asdasdasdsa sadsad asdasda asdasad"
-horizontal_alignment = 1
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.0
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor viverra ex vel pretium. Donec nec porta leo. Phasellus pulvinar, sapien sed consectetur egestas, enim enim faucibus odio, eu semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor viverra ex vel pretium. Donec nec porta leo. Phasellus pulvinar, sapien sed consectetur egestas, enim enim faucibus odio, eu semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor viverra ex vel pretium. Donec nec porta leo. Phasellus pulvinar, sapien sed consectetur egestas, enim enim faucibus odio, eu semper."
 autowrap_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/CenterContainer/GridContainer"]
+[node name="Control" type="Control" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("1_fa07b")
-expand_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+size_flags_stretch_ratio = 2.0
+text = "Title"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.0
+texture = ExtResource("2_8wgxt")
+expand_mode = 1
+stretch_mode = 5
