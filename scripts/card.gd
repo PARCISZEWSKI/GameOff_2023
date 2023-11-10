@@ -1,4 +1,5 @@
 extends PanelContainer
+#extends Node2D
 
 var card_desc: Label
 var card_title: Label
