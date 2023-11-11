@@ -7,8 +7,8 @@
 script = ExtResource("1_rrjrh")
 
 [node name="GameJ" type="Sprite2D" parent="."]
-position = Vector2(980, 425)
-scale = Vector2(0.55, 0.55)
+position = Vector2(961.7, 504.5)
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_h4o43")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
