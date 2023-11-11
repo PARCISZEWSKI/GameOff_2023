@@ -56,7 +56,7 @@ var cards: Dictionary = {
 	
 	"006" : {
 		"name" : "Ræstitæknir",
-		"description" : "Þessi kúkaði upp á bak, getum við visað honum út",
+		"description" : "Þessi kúkaði upp á bak, eigum við að vísa honum út?",
 		"image" : "path to image",
 		"tags" : { "one-off" : false, "serial" : null, },
 		"effect" : { "one": 0, "two": 0, "three": 0, "four": 0, }
