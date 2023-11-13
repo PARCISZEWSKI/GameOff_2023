@@ -1,22 +1,19 @@
 extends PanelContainer
 #extends Node2D
 
-var card_desc: Label
-var card_title: Label
-var card_image: TextureRect
+	
 @onready var cards = CardData.cards
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	card_desc = $MarginContainer/VBoxContainer/Label
-	card_title = $MarginContainer/VBoxContainer/Label2
-	card_image = $MarginContainer/VBoxContainer/TextureRect
+	print(cards["008"]["description"])
+	pass
 	#setcard("002")
 	
-func setcard(card_key: String) -> void:
+func setcard(card_key) -> void:
 	print(cards[card_key]["description"])
-	card_desc.text = cards[card_key]["description"]
-	card_title.text = cards[card_key]["name"]
-	card_image.texture = load(cards[card_key]["image"])
+	$MarginContainer/VBoxContainer/Label.text = cards[card_key]["description"]
+	$MarginContainer/VBoxContainer/Label2.text = cards[card_key]["name"]
+	$MarginContainer/VBoxContainer/TextureRect.texture = load(cards[card_key]["image"])
 	pass
 	

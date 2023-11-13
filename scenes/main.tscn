@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbii4ugrdfk6b"]
+[gd_scene load_steps=4 format=3 uid="uid://cbii4ugrdfk6b"]
 
 [ext_resource type="Texture2D" uid="uid://nqnyo7c0ycaj" path="res://assets/visual/gameJ.png" id="1_h4o43"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_rrjrh"]
+[ext_resource type="PackedScene" uid="uid://c7fr42v7wxy6r" path="res://nodes/card.tscn" id="3_urr26"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_rrjrh")
@@ -13,4 +14,8 @@ texture = ExtResource("1_h4o43")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[connection signal="ready" from="." to="." method="_on_ready"]
+[node name="card" parent="CanvasLayer" instance=ExtResource("3_urr26")]
+offset_left = 725.0
+offset_top = 105.0
+offset_right = 1286.0
+offset_bottom = 904.0
