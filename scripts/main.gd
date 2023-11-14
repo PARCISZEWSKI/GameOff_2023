@@ -3,6 +3,7 @@ extends Node2D
 var card_current
 var card_template: PackedScene = preload("res://nodes/card.tscn")
 var cards_list: Array = CardData.cards.keys()
+var card_direction: bool = true
 
 
 func _ready() -> void:
@@ -10,10 +11,19 @@ func _ready() -> void:
 	pass
 
 func _process(_delta) -> void:
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("right_arrow"):
+		card_direction = true
 		card_remove()
 		card_spawn()
-#
+		
+	if Input.is_action_just_pressed("left_arrow"):
+		card_direction = false
+		card_remove()
+		card_spawn()
+	
+	
+	if Input.is_action_just_pressed("ui_cancel"):
+		get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 func card_pick() -> String:
 	var key = cards_list.pick_random()
 	return key

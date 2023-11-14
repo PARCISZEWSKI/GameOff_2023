@@ -1,14 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbii4ugrdfk6b"]
+[gd_scene load_steps=2 format=3 uid="uid://cbii4ugrdfk6b"]
 
-[ext_resource type="Texture2D" uid="uid://nqnyo7c0ycaj" path="res://assets/visual/gameJ.png" id="1_h4o43"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_rrjrh"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_rrjrh")
-
-[node name="GameJ" type="Sprite2D" parent="."]
-position = Vector2(961.7, 504.5)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("1_h4o43")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
