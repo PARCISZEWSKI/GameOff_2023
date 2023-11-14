@@ -6,7 +6,7 @@ extends PanelContainer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print(cards["008"]["description"])
+	#print(cards["008"]["description"])
 	pass
 	#setcard("002")
 	

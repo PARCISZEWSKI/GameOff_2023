@@ -10,9 +10,8 @@ func _ready() -> void:
 	pass
 
 func _process(_delta) -> void:
-	if Input.is_action_just_pressed("ui_accept"):
-		card_remove()
-		card_spawn()
+	#if Input.is_action_just_pressed("ui_accept"):
+	pass	
 #
 func card_pick() -> String:
 	var key = cards_list.pick_random()
@@ -21,7 +20,7 @@ func card_pick() -> String:
 func card_spawn():
 	card_current = card_template.instantiate()
 	$CanvasLayer.add_child(card_current)
-	card_current.setcard(card_pick())
+	card_current.setcard($CanvasLayer/VBoxContainer/LineEdit.text_submitted)
 	card_current.anchor_top = 0.5
 	card_current.anchor_right = 0.5
 	card_current.anchor_bottom = 0.5
@@ -34,3 +33,8 @@ func card_remove():
 		card_current = null
 #
 #
+
+
+func _on_button_button_down():
+	card_remove()
+	card_spawn()
