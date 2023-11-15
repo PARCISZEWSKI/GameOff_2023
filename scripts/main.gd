@@ -56,3 +56,7 @@ func card_remove():
 
 func _on_right(card_stats):
 	pass # Replace with function body.
+
+
+func _on_resources_empty_bar(reason):
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")

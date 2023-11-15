@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://scripts/resources.gd" id="2_086y0"]
 
 [node name="main" type="Node2D"]
+position = Vector2(0, 4)
 script = ExtResource("1_rrjrh")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -82,3 +83,4 @@ show_percentage = false
 
 [connection signal="left" from="." to="CanvasLayer/MarginContainer/resources" method="_on_main_left"]
 [connection signal="right" from="." to="CanvasLayer/MarginContainer/resources" method="_on_main_right"]
+[connection signal="empty_bar" from="CanvasLayer/MarginContainer/resources" to="." method="_on_resources_empty_bar"]
