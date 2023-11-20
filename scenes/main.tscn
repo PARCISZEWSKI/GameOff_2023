@@ -15,11 +15,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -292.5
-offset_top = -107.0
-offset_right = 292.5
+offset_left = -206.5
+offset_top = -83.0
+offset_right = 206.5
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_constants/margin_top = -20
+theme_override_constants/margin_bottom = 20
 
 [node name="resources" type="HBoxContainer" parent="CanvasLayer/MarginContainer"]
 layout_mode = 2
@@ -39,6 +41,7 @@ show_percentage = false
 [node name="filler1" type="Control" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
 
 [node name="two" type="ProgressBar" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
@@ -54,6 +57,7 @@ show_percentage = false
 [node name="filler2" type="Control" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
 
 [node name="three" type="ProgressBar" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
@@ -69,6 +73,7 @@ show_percentage = false
 [node name="filler3" type="Control" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
 
 [node name="four" type="ProgressBar" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
