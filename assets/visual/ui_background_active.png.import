@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2xsdemkwww0e"
-path="res://.godot/imported/ui_background.png-fd8873e6fed9f2653a21326d300e87db.ctex"
+uid="uid://cpuqco78docco"
+path="res://.godot/imported/ui_background_active.png-320a01ddcf1a7d399ea100ef7a80b39b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/visual/ui_background.png"
-dest_files=["res://.godot/imported/ui_background.png-fd8873e6fed9f2653a21326d300e87db.ctex"]
+source_file="res://assets/visual/ui_background_active.png"
+dest_files=["res://.godot/imported/ui_background_active.png-320a01ddcf1a7d399ea100ef7a80b39b.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

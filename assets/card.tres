@@ -1,24 +1,63 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://hhpmuodgunsr"]
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://hhpmuodgunsr"]
 
-[ext_resource type="Texture2D" uid="uid://2xsdemkwww0e" path="res://assets/visual/ui_background.png" id="1_qw66n"]
+[ext_resource type="Texture2D" uid="uid://cpuqco78docco" path="res://assets/visual/ui_background_active.png" id="1_ft2i3"]
+[ext_resource type="Texture2D" uid="uid://2xsdemkwww0e" path="res://assets/visual/ui_background.png" id="2_huhlh"]
+[ext_resource type="FontFile" uid="uid://bij6xybq0rm1w" path="res://assets/Inkverse-BWDRx.ttf" id="3_xmqw4"]
 
-[sub_resource type="Gradient" id="Gradient_4pqin"]
-offsets = PackedFloat32Array(0, 0.187097, 0.806452, 1)
-colors = PackedColorArray(0.0862745, 0.0862745, 0.0862745, 0, 0.0862745, 0.0862745, 0.0862745, 0.509804, 0.0862745, 0.0862745, 0.0862745, 0.509804, 0.0862745, 0.0862745, 0.0862745, 0)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0tyu3"]
+texture = ExtResource("1_ft2i3")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_fq1ro"]
-gradient = SubResource("Gradient_4pqin")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bskxo"]
+texture = ExtResource("1_ft2i3")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nfrbe"]
-texture = SubResource("GradientTexture2D_fq1ro")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5uhuv"]
+texture = ExtResource("2_huhlh")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xsgyt"]
-texture = ExtResource("1_qw66n")
-texture_margin_left = 5.0
-texture_margin_top = 5.0
-texture_margin_right = 5.0
-texture_margin_bottom = 5.0
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o2088"]
+texture = ExtResource("1_ft2i3")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aihi8"]
+texture = ExtResource("2_huhlh")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_db30j"]
+texture = ExtResource("2_huhlh")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
 
 [resource]
-Panel/styles/panel = SubResource("StyleBoxTexture_nfrbe")
-PanelContainer/styles/panel = SubResource("StyleBoxTexture_xsgyt")
+default_font = ExtResource("3_xmqw4")
+Button/font_sizes/font_size = 37
+Button/styles/focus = SubResource("StyleBoxTexture_0tyu3")
+Button/styles/hover = SubResource("StyleBoxTexture_bskxo")
+Button/styles/normal = SubResource("StyleBoxTexture_5uhuv")
+Button/styles/pressed = SubResource("StyleBoxTexture_o2088")
+CardTitle/base_type = &"Label"
+CardTitle/font_sizes/font_size = 18
+HeaderLarge/font_sizes/font_size = 43
+Label/font_sizes/font_size = 22
+Panel/styles/panel = SubResource("StyleBoxTexture_aihi8")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_db30j")
+titleLabel/base_type = &"Label"
+titleLabel/font_sizes/font_size = 26

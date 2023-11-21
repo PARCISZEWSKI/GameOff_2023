@@ -4,7 +4,7 @@ var card_current
 var card_current_key: String
 var card_template: PackedScene = preload("res://nodes/card.tscn")
 var cards_list: Array = CardData.cards.keys()
-var deck_current = ["009"]
+var deck_current = ["001"]
 var deck_discard = []
 var deck_removed: Array[String] = []
 

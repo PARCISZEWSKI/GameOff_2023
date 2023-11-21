@@ -11,49 +11,52 @@ extends  Node
 #		"right add" : [],
 #	},
 
+const homeless = 'Jens'
+const artist = 'Artist'
+#const 
 
 var cards: Dictionary = { 
 	"001" : {
-		"name" : "Heimilislaus",
-		"description" : "Þetta er góð aðstaða, má ég dreifa upplýsingum til feðga mína",
+		"name" : "Introduction",
+		"description" : "Welcome, welcome. You have been appointed to take care of the largest homeless shelter yet. It will be a perilous journey best of luck to you!",
 		"image" : "res://assets/visual/Person_icon_BLACK-01.svg.png",
-		"one-off" : false,
-		"left" : { "one": -20, "two": -20, "three": -20, "four": -20, },
-		"left add" : [],
-		"right" : { "one": 20, "two": 20, "three": 20, "four": 20, },
-		"right add" : [],
+		"one-off" : true,
+		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"left add" : ["002"],
+		"right" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"right add" : ["002"],
 	},
 	
-	"002" : {
-		"name" : "Fólk",
-		"description" : "Nohhh, er þetta hotel, heyrðu hvað kostar nóttin?",
+	"002" : { #Homeless Phase One spil
+		"name" : homeless,
+		"description" : "I found myself down my luck. Is there any chance I can stay here, it would mean a lot",
 		"image" : "res://assets/visual/output-onlinepngtools.png",
 		"one-off" : false,
-		"left" : { "one": -20, "two": -20, "three": -20, "four": -20, },
+		"left" : { "one": -200, "two": -200, "three": -200, "four": -200, },
 		"left add" : [],
-		"right" : { "one": 20, "two": 20, "three": 20, "four": 20, },
-		"right add" : [],
+		"right" : { "one": 20, "two": -20, "three": 0, "four": 0, },
+		"right add" : ["003"],
 	},
 	
-	"003" : {
-		"name" : "Sálfræði Stofa",
-		"description" : "Við veitum ekki þjónustu handa fólki sem er undir áhrifum, við viljum sjá þig banna fíkniefna notkun",
+	"003" : { #Homeless leads to journalist
+		"name" : homeless,
+		"description" : "This is a very nice facility, I want to let my friends know about it, is that alright with you?",
 		"image" : "path to image",
 		"one-off" : false,
-		"left" : { "one": -20, "two": -20, "three": -20, "four": -20, },
+		"left" : { "one": -20, "two": 0, "three": 10, "four": -10, },
 		"left add" : [],
-		"right" : { "one": 20, "two": 20, "three": 20, "four": 20, },
+		"right" : { "one": 20, "two": -20, "three": -20, "four": 0, },
 		"right add" : [],
 	},
 	
 	"004" : {
-		"name" : "Karen",
-		"description" : "Ég hata heimilislaust fólk, ég vil ekki sjá það",
+		"name" : homeless,
+		"description" : "Even though this is a nice place, I think that it should be reserved for the people in need",
 		"image" : "path to image",
-		"one-off" : false,
-		"left" : { "one": -20, "two": -20, "three": -20, "four": -20, },
+		"one-off" : true,
+		"left" : { "one": -20, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
-		"right" : { "one": 20, "two": 20, "three": 20, "four": 20, },
+		"right" : { "one": 20, "two": -20, "three": 0, "four": 0, },
 		"right add" : [],
 	},
 	
