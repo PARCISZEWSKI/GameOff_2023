@@ -1,4 +1,4 @@
-extends HBoxContainer
+extends VBoxContainer
 
 signal empty_bar(reason)
 

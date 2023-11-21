@@ -1,4 +1,6 @@
-[gd_resource type="Theme" load_steps=5 format=3 uid="uid://hhpmuodgunsr"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://hhpmuodgunsr"]
+
+[ext_resource type="Texture2D" uid="uid://2xsdemkwww0e" path="res://assets/visual/ui_background.png" id="1_qw66n"]
 
 [sub_resource type="Gradient" id="Gradient_4pqin"]
 offsets = PackedFloat32Array(0, 0.187097, 0.806452, 1)
@@ -11,7 +13,11 @@ gradient = SubResource("Gradient_4pqin")
 texture = SubResource("GradientTexture2D_fq1ro")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xsgyt"]
-texture = SubResource("GradientTexture2D_fq1ro")
+texture = ExtResource("1_qw66n")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+texture_margin_bottom = 5.0
 
 [resource]
 Panel/styles/panel = SubResource("StyleBoxTexture_nfrbe")
