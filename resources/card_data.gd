@@ -13,13 +13,15 @@ extends  Node
 
 const homeless = 'Jens'
 const artist = 'Artist'
+const girl_young = 'Jess'
+const janitor = "Mike"
 #const 
 
 var cards: Dictionary = { 
 	"001" : {
 		"name" : "Introduction",
 		"description" : "Welcome, welcome. You have been appointed to take care of the largest homeless shelter yet. It will be a perilous journey best of luck to you!",
-		"image" : "res://assets/visual/Person_icon_BLACK-01.svg.png",
+		"image" : " _res://assets/visual/stelpa555555.png",
 		"one-off" : true,
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : ["002"],
@@ -27,7 +29,7 @@ var cards: Dictionary = {
 		"right add" : ["002"],
 	},
 	
-	"002" : { #Homeless Phase One spil
+	"002" : { #Homeless tengist í : 003, 005, 006
 		"name" : homeless,
 		"description" : "I found myself down my luck. Is there any chance I can stay here, it would mean a lot",
 		"image" : "res://assets/visual/output-onlinepngtools.png",
@@ -35,7 +37,7 @@ var cards: Dictionary = {
 		"left" : { "one": -200, "two": -200, "three": -200, "four": -200, },
 		"left add" : [],
 		"right" : { "one": 20, "two": -20, "three": 0, "four": 0, },
-		"right add" : ["003"],
+		"right add" : ["003", "005", "006"],
 	},
 	
 	"003" : { #Homeless leads to journalist
@@ -49,7 +51,7 @@ var cards: Dictionary = {
 		"right add" : [],
 	},
 	
-	"004" : {
+	"004" : { #Homeless angry about hotel
 		"name" : homeless,
 		"description" : "Even though this is a nice place, I think that it should be reserved for the people in need",
 		"image" : "path to image",
@@ -61,24 +63,24 @@ var cards: Dictionary = {
 	},
 	
 	"005" : {
-		"name" : "Ung Stelpa",
-		"description" : "Ég var að baka köku með mömmu, viljið þið afgánging?",
-		"image" : "res://assets/visual/output-onlinepngtools.png",
+		"name" : girl_young,
+		"description" : "I was baking a cake with my mom. She told me that maybe the shelter would maybe like it",
+		"image" : "res://assets/visual/stelpa555555.png",
 		"one-off" : false,
-		"left" : { "one": -20, "two": -20, "three": -20, "four": -20, },
+		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
-		"right" : { "one": 20, "two": 20, "three": 20, "four": 20, },
+		"right" : { "one": 10, "two": 10, "three": 0, "four": 0, },
 		"right add" : [],
 	},
 	
 	"006" : {
-		"name" : "Ræstitæknir",
-		"description" : "Þessi kúkaði upp á bak, eigum við að vísa honum út?",
+		"name" : janitor,
+		"description" : "There has been an accident in one of the bathrooms, should we get rid of the culprit.",
 		"image" : "path to image",
 		"one-off" : false,
-		"left" : { "one": -20, "two": -20, "three": -20, "four": -20, },
+		"left" : { "one": -50, "two": 0, "three": -0, "four": 0, },
 		"left add" : [],
-		"right" : { "one": 20, "two": 20, "three": 20, "four": 20, },
+		"right" : { "one": 0, "two": -20, "three": 0, "four": 0, },
 		"right add" : [],
 	},
 	
