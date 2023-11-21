@@ -1,11 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbii4ugrdfk6b"]
+[gd_scene load_steps=6 format=3 uid="uid://cbii4ugrdfk6b"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_rrjrh"]
 [ext_resource type="Script" path="res://scripts/resources.gd" id="2_086y0"]
+[ext_resource type="Theme" uid="uid://hhpmuodgunsr" path="res://assets/card.tres" id="2_md8wk"]
+[ext_resource type="Texture2D" uid="uid://yq7ikd5u07bh" path="res://assets/visual/bar_under.png" id="3_cfbur"]
+[ext_resource type="Texture2D" uid="uid://3fkhhpuic8me" path="res://assets/visual/bar_fill.png" id="4_m63l8"]
 
 [node name="main" type="Node2D"]
 position = Vector2(0, 4)
 script = ExtResource("1_rrjrh")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -31.0
+offset_top = -39.0
+offset_right = 1954.0
+offset_bottom = 1095.0
+color = Color(0, 0, 0, 1)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -15,76 +25,99 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -206.5
-offset_top = -83.0
-offset_right = 206.5
+offset_left = -251.0
+offset_top = -198.0
+offset_right = 251.0
+offset_bottom = -22.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_constants/margin_top = -20
-theme_override_constants/margin_bottom = 20
+theme = ExtResource("2_md8wk")
 
-[node name="resources" type="HBoxContainer" parent="CanvasLayer/MarginContainer"]
+[node name="resources" type="VBoxContainer" parent="CanvasLayer/MarginContainer"]
 layout_mode = 2
 script = ExtResource("2_086y0")
 
-[node name="one" type="ProgressBar" parent="CanvasLayer/MarginContainer/resources"]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/resources"]
+layout_mode = 2
+text = "Safety"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="one" type="TextureProgressBar" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 1
+size_flags_vertical = 6
 size_flags_stretch_ratio = 3.0
 max_value = 200.0
-step = 1.0
 value = 100.0
-fill_mode = 3
-show_percentage = false
+texture_under = ExtResource("3_cfbur")
+texture_progress = ExtResource("4_m63l8")
 
 [node name="filler1" type="Control" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
 
-[node name="two" type="ProgressBar" parent="CanvasLayer/MarginContainer/resources"]
+[node name="Label2" type="Label" parent="CanvasLayer/MarginContainer/resources"]
+layout_mode = 2
+text = "Finances"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="two" type="TextureProgressBar" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 1
+size_flags_vertical = 6
 size_flags_stretch_ratio = 3.0
 max_value = 200.0
-step = 1.0
 value = 100.0
-fill_mode = 3
-show_percentage = false
+texture_under = ExtResource("3_cfbur")
+texture_progress = ExtResource("4_m63l8")
 
 [node name="filler2" type="Control" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
 
-[node name="three" type="ProgressBar" parent="CanvasLayer/MarginContainer/resources"]
+[node name="Label3" type="Label" parent="CanvasLayer/MarginContainer/resources"]
+layout_mode = 2
+text = "Social Standing"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="three" type="TextureProgressBar" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 1
+size_flags_vertical = 6
 size_flags_stretch_ratio = 3.0
 max_value = 200.0
-step = 1.0
 value = 100.0
-fill_mode = 3
-show_percentage = false
+texture_under = ExtResource("3_cfbur")
+texture_progress = ExtResource("4_m63l8")
 
 [node name="filler3" type="Control" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
 
-[node name="four" type="ProgressBar" parent="CanvasLayer/MarginContainer/resources"]
+[node name="Label4" type="Label" parent="CanvasLayer/MarginContainer/resources"]
+layout_mode = 2
+text = "Attention"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="four" type="TextureProgressBar" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 1
+size_flags_vertical = 6
 size_flags_stretch_ratio = 3.0
 max_value = 200.0
-step = 1.0
 value = 100.0
-fill_mode = 3
-show_percentage = false
+texture_under = ExtResource("3_cfbur")
+texture_progress = ExtResource("4_m63l8")
 
 [connection signal="left" from="." to="CanvasLayer/MarginContainer/resources" method="_on_main_left"]
 [connection signal="right" from="." to="CanvasLayer/MarginContainer/resources" method="_on_main_right"]
