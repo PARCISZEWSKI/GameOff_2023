@@ -1,4 +1,4 @@
-extends PanelContainer
+extends Panel
 #extends Node2D
 
 	
