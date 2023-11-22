@@ -2,7 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://hhpmuodgunsr" path="res://assets/card.tres" id="1_si7q2"]
 [ext_resource type="Script" path="res://scripts/card.gd" id="2_i3pfs"]
-[ext_resource type="Texture2D" uid="uid://bxhsaw0fqaqjl" path="res://assets/visual/ung stelpa með köku.png" id="3_4yy5d"]
+[ext_resource type="Texture2D" uid="uid://bxrfq4aqp675b" path="res://assets/visual/janitor2.png" id="3_vc2du"]
 
 [node name="card" type="Panel"]
 texture_filter = 1
@@ -59,6 +59,6 @@ autowrap_mode = 2
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
-texture = ExtResource("3_4yy5d")
+texture = ExtResource("3_vc2du")
 expand_mode = 1
 stretch_mode = 5

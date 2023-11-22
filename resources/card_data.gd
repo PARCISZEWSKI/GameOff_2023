@@ -76,7 +76,7 @@ var cards: Dictionary = {
 	"006" : {
 		"name" : janitor,
 		"description" : "There has been an accident in one of the bathrooms, should we get rid of the culprit.",
-		"image" : "path to image",
+		"image" : "res://assets/visual/janitor2.png",
 		"one-off" : false,
 		"left" : { "one": -50, "two": 0, "three": -0, "four": 0, },
 		"left add" : [],
