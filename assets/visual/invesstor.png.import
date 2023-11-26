@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkfa3i858rlqg"
-path="res://.godot/imported/köttur.png-150ad7c6d93d344bfac8349ede617e63.ctex"
+uid="uid://cltyqqhraefj0"
+path="res://.godot/imported/invesstor.png-5d10d11467a8c2ecef12d8ea49673ed2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/visual/köttur.png"
-dest_files=["res://.godot/imported/köttur.png-150ad7c6d93d344bfac8349ede617e63.ctex"]
+source_file="res://assets/visual/invesstor.png"
+dest_files=["res://.godot/imported/invesstor.png-5d10d11467a8c2ecef12d8ea49673ed2.ctex"]
 
 [params]
 
