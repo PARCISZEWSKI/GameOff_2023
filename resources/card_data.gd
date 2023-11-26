@@ -43,7 +43,7 @@ var cards: Dictionary = {
 		"left" : { "one": -200, "two": -200, "three": -200, "four": -200, },
 		"left add" : [],
 		"right" : { "one": 20, "two": -20, "three": 0, "four": 0, },
-		"right add" : ["003", "005", "006", "007"],
+		"right add" : ["003", "005", "006", "007", "008", "009", "010", "011", "015", "017", "018", "019"],
 	},
 	
 	"003" : { #Homeless leads to journalist
@@ -142,7 +142,7 @@ var cards: Dictionary = {
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
 		"right" : { "one": 10, "two": -10, "three": 0, "four": 0, },
-		"right add" : [],
+		"right add" : ["012"],
 	},
 
 	"012" : { #Psy_services, warning
@@ -230,7 +230,7 @@ var cards: Dictionary = {
 		"left" : { "one": 10, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
 		"right" : { "one": -10, "two": -10, "three": 0, "four": 0, },
-		"right add" : ["004"],
+		"right add" : [],
 	},
 
 	"020" : { #Girl young  birthday donation
