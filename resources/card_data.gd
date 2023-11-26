@@ -38,7 +38,7 @@ var cards: Dictionary = {
 	"002" : { #Homeless tengist í : 003, 005, 006, 007
 		"name" : homeless,
 		"description" : "I found myself down my luck. Is there any chance I can stay here, it would mean a lot",
-		"image" : "res://assets/visual/output-onlinepngtools.png",
+		"image" : "res://assets/visual/maður.png",
 		"one-off" : false,
 		"left" : { "one": -200, "two": -200, "three": -200, "four": -200, },
 		"left add" : [],
@@ -49,7 +49,7 @@ var cards: Dictionary = {
 	"003" : { #Homeless leads to journalist
 		"name" : homeless,
 		"description" : "This is a very nice facility, I want to let my friends know about it, is that alright with you?",
-		"image" : "path to image",
+		"image" : "res://assets/visual/maður.png",
 		"one-off" : false,
 		"left" : { "one": -20, "two": 0, "three": 10, "four": -10, },
 		"left add" : [],
@@ -60,7 +60,7 @@ var cards: Dictionary = {
 	"004" : { #Homeless angry about hotel
 		"name" : homeless,
 		"description" : "Even though this is a nice place, I think that it should be reserved for the people in need",
-		"image" : "path to image",
+		"image" : "res://assets/visual/maður.png",
 		"one-off" : true,
 		"left" : { "one": -20, "two": 0, "three": 0, "four": 0, },
 		"left add" : ["018"],
@@ -93,7 +93,7 @@ var cards: Dictionary = {
 	"007" : { #Investor card
 		"name" : investor,
 		"description" : "I like what you're doing. If you can manage some progress I could see myself offering some monetary support",
-		"image" : "path to image",
+		"image" : "res://assets/visual/invesstor.png",
 		"one-off" : true,
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
@@ -181,7 +181,7 @@ var cards: Dictionary = {
 	"015" : { #Janitor, socialist cleaning
 		"name" : janitor,
 		"description" : "Should we implement a policy of cleaning after one self in the dninig hall",
-		"image" : "path to image",
+		"image" : "res://assets/visual/janitor2.png",
 		"one-off" : true,
 		"left" : { "one": 5, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
@@ -192,7 +192,7 @@ var cards: Dictionary = {
 	"016" : { #Janitor, Art supplies 
 		"name" : janitor,
 		"description" : "Somebody got into the art supplies and spilled them all over the walls",
-		"image" : "path to image",
+		"image" : "res://assets/visual/janitor2.png",
 		"one-off" : false,
 		"left" : { "one": 0, "two": -10, "three": 0, "four": 0, },
 		"left add" : [],
