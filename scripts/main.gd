@@ -96,9 +96,9 @@ func _on_resources_empty_bar(reason):
 func card_swipe(delta) -> String:
 	var card_center = card_current.global_position.x + card_current.size.x/2
 	if Input.is_action_pressed("left_mouse"):
-		if Input.is_action_just_pressed("left_mouse"):
-			$AudioStreamPlayer.play()
 		if mouse_over_card or dragging:
+			if Input.is_action_just_pressed("left_mouse"):
+				$AudioStreamPlayer.play()
 			dragging = true 
 			#mouse_over_card:
 			var vec = (get_global_mouse_position().x - card_center) # getting the vector from self to the mouse

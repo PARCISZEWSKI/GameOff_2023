@@ -77,7 +77,7 @@ var cards: Dictionary = {
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
 		"right" : { "one": 10, "two": 10, "three": 0, "four": 0, },
-		"right add" : ["20"],
+		"right add" : ["20",],
 	},
 	
 	"006" : { #Janitor wanting to throw people out
