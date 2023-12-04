@@ -170,7 +170,7 @@ var cards: Dictionary = {
 
 	"014" : { #psy_experiments, appeaerance
 		"name" : psy_experimental,
-		"description" : "I heard about your issues with Helga but your service aligns with our methods, we can offer some of our services to you",
+		"description" : "I heard about your issues with Fredriksens but your service aligns with our methods, we can offer some of our services to you",
 		"image" : "res://assets/visual/sálaStovfa.png",
 		"one-off" : true,
 		"left" : { "one": -10, "two": 10, "three": -10, "four": 0, },

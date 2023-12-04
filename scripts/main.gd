@@ -56,8 +56,8 @@ func player_actions(checker: String) -> void:
 		add_to_deck()
 		card_spawn()
 		$AudioStreamPlayer2.play()
-		#print(deck_current)
-		#print(deck_discard)
+		print(deck_current)
+		print(deck_discard)
 	
 	if Input.is_action_just_pressed("right_arrow") or checker == "right":
 		emit_signal("right", CardData.cards[card_current_key]["right"])
@@ -65,8 +65,8 @@ func player_actions(checker: String) -> void:
 		add_to_deck()
 		card_spawn()
 		$AudioStreamPlayer2.play()
-		#print(deck_current)
-		#print(deck_discard)
+		print(deck_current)
+		print(deck_discard)
 		
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
@@ -74,7 +74,7 @@ func player_actions(checker: String) -> void:
 
 
 func add_to_deck() -> void:
-	if len(deck_current) < 1:
+	if len(deck_current) == 0:
 		deck_current = deck_discard
 		deck_discard = []
 
