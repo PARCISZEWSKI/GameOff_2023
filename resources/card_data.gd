@@ -11,17 +11,18 @@ extends  Node
 #		"right add" : [],
 #	},
 
-const homeless = 'Jens'
-const artist = 'Lorenzo'
-const girl_young = 'Jess'
-const janitor = "Mike"
-const investor = "Lafayette"
-const person_one = "Georgia"
-const psy_services = "Helga"
-const psy_experimental = "Jamal"
-const cat = "Chonkers"
-const person_hotel = "Dirty Larry"
-const journalist = "Cassandra"
+const homeless = 'Jens' #Mynd til
+const artist = 'Lorenzo' #Mynd vantar
+const girl_young = 'Jess' #Mynd til
+const janitor = "Mike" #mynd til
+const investor = "Jessica" #mynd til
+const person_one = "Georgia" #mynd til
+const psy_services = "Helga" #Heilbgrigðis stofa mynd vantar
+const psy_experimental = "Jamal" #Ný heilbrigðis stofa mynd vantar
+const cat = "Chonkers"  #mynd til
+const person_hotel = "Dirty Larry" #Hotel leitandi
+const journalist = "Cassandra"  #Mynd til
+const tourist = "Bill and Sookie" #mynd til
 
 var cards: Dictionary = { 
 	"001" : {
@@ -104,7 +105,7 @@ var cards: Dictionary = {
 	"008" : { #Persone one, uneccesary service
 		"name" : person_one,
 		"description" : "I think this service is unnecessary because everyone has an equal opportunity to earn money",
-		"image" : "path to image",
+		"image" : "res://assets/visual/karen.png",
 		"one-off" : false,
 		"left" : { "one": 10, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
@@ -115,7 +116,7 @@ var cards: Dictionary = {
 	"009" : { #Person one, homeless in gardens
 		"name" : person_one,
 		"description" : "Good day I wanted to let you know that since you came here I have seen 4 homeless people in my garden, I find it unacceptable. I think you should talk to them and forbid them from entering other people's gardens",
-		"image" : "path to image",
+		"image" : "res://assets/visual/karen.png",
 		"one-off" : true,
 		"left" : { "one": 30, "two": -10, "three": 0, "four": 0, },
 		"left add" : [],
@@ -126,7 +127,7 @@ var cards: Dictionary = {
 	"010" : { #Person one, scared of the homeless
 		"name" : person_one,
 		"description" : "I dont know how you can work with these \"people\". Arent you always scared?",
-		"image" : "path to image",
+		"image" : "res://assets/visual/karen.png",
 		"one-off" : false,
 		"left" : { "one": 20, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],

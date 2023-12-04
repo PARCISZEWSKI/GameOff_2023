@@ -119,6 +119,8 @@ value = 100.0
 texture_under = ExtResource("3_cfbur")
 texture_progress = ExtResource("4_m63l8")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
 [connection signal="left" from="." to="CanvasLayer/MarginContainer/resources" method="_on_main_left"]
 [connection signal="right" from="." to="CanvasLayer/MarginContainer/resources" method="_on_main_right"]
 [connection signal="empty_bar" from="CanvasLayer/MarginContainer/resources" to="." method="_on_resources_empty_bar"]

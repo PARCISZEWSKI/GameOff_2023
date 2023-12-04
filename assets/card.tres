@@ -39,16 +39,11 @@ texture_margin_top = 8.0
 texture_margin_right = 8.0
 texture_margin_bottom = 8.0
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_db30j"]
-texture = ExtResource("2_huhlh")
-texture_margin_left = 8.0
-texture_margin_top = 8.0
-texture_margin_right = 8.0
-texture_margin_bottom = 8.0
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u2sye"]
 
 [resource]
 default_font = ExtResource("3_xmqw4")
-Button/font_sizes/font_size = 37
+Button/font_sizes/font_size = 60
 Button/styles/focus = SubResource("StyleBoxTexture_0tyu3")
 Button/styles/hover = SubResource("StyleBoxTexture_bskxo")
 Button/styles/normal = SubResource("StyleBoxTexture_5uhuv")
@@ -58,6 +53,6 @@ CardTitle/font_sizes/font_size = 18
 HeaderLarge/font_sizes/font_size = 43
 Label/font_sizes/font_size = 22
 Panel/styles/panel = SubResource("StyleBoxTexture_aihi8")
-PanelContainer/styles/panel = SubResource("StyleBoxTexture_db30j")
+PanelContainer/styles/panel = SubResource("StyleBoxEmpty_u2sye")
 titleLabel/base_type = &"Label"
 titleLabel/font_sizes/font_size = 26
