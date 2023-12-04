@@ -17,12 +17,12 @@ const girl_young = 'Jess' #Mynd til
 const janitor = "Mike" #mynd til
 const investor = "Jessica" #mynd til
 const person_one = "Georgia" #mynd til
-const psy_services = "Helga" #Heilbgrigðis stofa mynd vantar
-const psy_experimental = "Jamal" #Ný heilbrigðis stofa mynd vantar
+const psy_services = "Helga" #mynd til
+const psy_experimental = "Jamal" #mynd til
 const cat = "Chonkers"  #mynd til
-const person_hotel = "Dirty Larry" #Hotel leitandi
+const person_hotel = "Bill and Sookie"#mynd til
 const journalist = "Cassandra"  #Mynd til
-const tourist = "Bill and Sookie" #mynd til
+const tourist = "Dirty Larry" #Ekki til
 
 var cards: Dictionary = { 
 	"001" : {
@@ -138,7 +138,7 @@ var cards: Dictionary = {
 	"011" : { #Psy_services, introduction
 		"name" : psy_services,
 		"description" : "Hi, you can count on our psychology services for your shelter population, please let them know we are available",
-		"image" : "path to image",
+		"image" : "res://assets/visual/sálaS.png",
 		"one-off" : true,
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
@@ -149,7 +149,7 @@ var cards: Dictionary = {
 	"012" : { #Psy_services, warning
 		"name" : psy_services,
 		"description" : "I think that there was a misunderstanding. We do not provide services for people under the influence, we want to see you ban drug use.",
-		"image" : "path to image",
+		"image" : "res://assets/visual/sálaS.png",
 		"one-off" : true,
 		"left" : { "one": 20, "two": -10, "three": 0, "four": 0, },
 		"left add" : ["013"],
@@ -160,7 +160,7 @@ var cards: Dictionary = {
 	"013" : { #Psy_services, warning last
 		"name" : psy_services,
 		"description" : "This is your last warning if you care about the poeple you are working with; you will implement a no use policy!",
-		"image" : "path to image",
+		"image" : "res://assets/visual/sálaS.png",
 		"one-off" : true,
 		"left" : { "one": 40, "two": -50, "three": 0, "four": 0, },
 		"left add" : ["014"],
@@ -171,7 +171,7 @@ var cards: Dictionary = {
 	"014" : { #psy_experiments, appeaerance
 		"name" : psy_experimental,
 		"description" : "I heard about your issues with Helga but your service aligns with our methods, we can offer some of our services to you",
-		"image" : "path to image",
+		"image" : "res://assets/visual/sálaStovfa.png",
 		"one-off" : true,
 		"left" : { "one": -10, "two": 10, "three": -10, "four": 0, },
 		"left add" : [],
@@ -215,7 +215,7 @@ var cards: Dictionary = {
 	"018" : { #hotel_person
 		"name" : person_hotel,
 		"description" : "Nohhh, this is a very nice place, is this a hotel, how much is the night?",
-		"image" : "path to image",
+		"image" : "res://assets/visual/túristar .png",
 		"one-off" : true,
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
