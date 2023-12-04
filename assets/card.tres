@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://2xsdemkwww0e" path="res://assets/visual/ui_background.png" id="2_huhlh"]
 [ext_resource type="FontFile" uid="uid://bij6xybq0rm1w" path="res://assets/Inkverse-BWDRx.ttf" id="3_xmqw4"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0tyu3"]
-texture = ExtResource("1_ft2i3")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ektr0"]
+texture = ExtResource("2_huhlh")
 texture_margin_left = 8.0
 texture_margin_top = 8.0
 texture_margin_right = 8.0
@@ -25,8 +25,8 @@ texture_margin_top = 8.0
 texture_margin_right = 8.0
 texture_margin_bottom = 8.0
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o2088"]
-texture = ExtResource("1_ft2i3")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e3ckb"]
+texture = ExtResource("2_huhlh")
 texture_margin_left = 8.0
 texture_margin_top = 8.0
 texture_margin_right = 8.0
@@ -44,10 +44,10 @@ texture_margin_bottom = 8.0
 [resource]
 default_font = ExtResource("3_xmqw4")
 Button/font_sizes/font_size = 60
-Button/styles/focus = SubResource("StyleBoxTexture_0tyu3")
+Button/styles/focus = SubResource("StyleBoxTexture_ektr0")
 Button/styles/hover = SubResource("StyleBoxTexture_bskxo")
 Button/styles/normal = SubResource("StyleBoxTexture_5uhuv")
-Button/styles/pressed = SubResource("StyleBoxTexture_o2088")
+Button/styles/pressed = SubResource("StyleBoxTexture_e3ckb")
 CardTitle/base_type = &"Label"
 CardTitle/font_sizes/font_size = 18
 HeaderLarge/font_sizes/font_size = 43

@@ -281,7 +281,7 @@ var cards: Dictionary = {
 	"024" : { #Artist introduction
 		"name" : artist,
 		"description" : "Hey man, nice to meet you, I used to enjoy art before I ended up on the streets, anyway I hope you don't mind me staying",
-		"image" : "path to image",
+		"image" : "res://assets/visual/listaamaður.png",
 		"one-off" : true,
 		"left" : { "one": -150, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
@@ -292,7 +292,7 @@ var cards: Dictionary = {
 	"025" : { #Artist art supplies
 		"name" : artist,
 		"description" : "I have always been passsionate about art, I sure wish there were some art supplies available",
-		"image" : "path to image",
+		"image" : "res://assets/visual/listaamaður.png",
 		"one-off" : true,
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
@@ -303,7 +303,7 @@ var cards: Dictionary = {
 	"026" : { #Artist art show
 		"name" : artist,
 		"description" : "Do you think it's okay to have an art show here, I've painted some pictures.",
-		"image" : "path to image",
+		"image" : "res://assets/visual/listaamaður.png",
 		"one-off" : true,
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
@@ -336,7 +336,7 @@ var cards: Dictionary = {
 	"029" : { #Artist jounralist reaction
 		"name" : artist,
 		"description" : "Thank you for speaking so well of me, I got an oportunity for a project",
-		"image" : "path_to_image",
+		"image" : "res://assets/visual/listaamaður.png",
 		"one-off" : true,
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : ["30"],
@@ -347,7 +347,7 @@ var cards: Dictionary = {
 	"030" : { #Artist leaving
 		"name" : artist,
 		"description" : "I think it's time for me to move on from here, Thank you for all the help",
-		"image" : "path_to_image",
+		"image" : "res://assets/visual/listaamaður.png",
 		"one-off" : true,
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
