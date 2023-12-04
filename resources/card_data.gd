@@ -12,22 +12,22 @@ extends  Node
 #	},
 
 const homeless = 'Jens' #Mynd til
-const artist = 'Lorenzo' #Mynd vantar
+const artist = 'Lorenza' #Mynd vantar
 const girl_young = 'Jess' #Mynd til
 const janitor = "Mike" #mynd til
-const investor = "Jessica" #mynd til
+const investor = "Margret" #mynd til
 const person_one = "Georgia" #mynd til
-const psy_services = "Helga" #mynd til
-const psy_experimental = "Jamal" #mynd til
-const cat = "Chonkers"  #mynd til
+const psy_services = "Fredericksens Health" #mynd til
+const psy_experimental = "Helga and Company" #mynd til
+const cat = "Luna"  #mynd til
 const person_hotel = "Bill and Sookie"#mynd til
 const journalist = "Cassandra"  #Mynd til
-const tourist = "Dirty Larry" #Ekki til
+const tourist = "Andrea" #Ekki til
 
 var cards: Dictionary = { 
 	"001" : {
 		"name" : "Introduction",
-		"description" : "Welcome, welcome. You have been appointed to take care of the largest homeless shelter yet. It will be a perilous journey best of luck to you!",
+		"description" : "Welcome, welcome. You have been appointed to take care of the largest homeless shelter yet. It will be a perilous journey best of luck to you! (Move the cards right for yes and left for no)",
 		"image" : " _res://assets/visual/stelpa555555.png",
 		"one-off" : true,
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
@@ -40,10 +40,10 @@ var cards: Dictionary = {
 		"name" : homeless,
 		"description" : "I found myself down my luck. Is there any chance I can stay here, it would mean a lot",
 		"image" : "res://assets/visual/maður.png",
-		"one-off" : false,
+		"one-off" : true,
 		"left" : { "one": -200, "two": -200, "three": -200, "four": -200, },
-		"left add" : [],
-		"right" : { "one": 20, "two": -20, "three": 0, "four": 0, },
+		"left add" : ["001"],
+		"right" : { "one": 30, "two": -20, "three": 0, "four": 0, },
 		"right add" : ["003", "005", "006", "007", "008", "009", "010", "011", "015", "017", "018", "019"],
 	},
 	
@@ -52,20 +52,20 @@ var cards: Dictionary = {
 		"description" : "This is a very nice facility, I want to let my friends know about it, is that alright with you?",
 		"image" : "res://assets/visual/maður.png",
 		"one-off" : false,
-		"left" : { "one": -20, "two": 0, "three": 10, "four": -10, },
+		"left" : { "one": -40, "two": 0, "three": 10, "four": -10, },
 		"left add" : [],
 		"right" : { "one": 20, "two": -20, "three": -20, "four": 0, },
-		"right add" : ["023"],
+		"right add" : ["023", "24"],
 	},
 	
 	"004" : { #Homeless angry about hotel
 		"name" : homeless,
-		"description" : "Even though this is a nice place, I think that it should be reserved for the people in need",
+		"description" : "Even though this is a nice place, I think that it should be reserved for people in need",
 		"image" : "res://assets/visual/maður.png",
 		"one-off" : true,
 		"left" : { "one": -20, "two": 0, "three": 0, "four": 0, },
 		"left add" : ["018"],
-		"right" : { "one": 20, "two": -20, "three": 0, "four": 0, },
+		"right" : { "one": 0, "two": -40, "three": 0, "four": 0, },
 		"right add" : ["018"],
 	},
 	
@@ -85,9 +85,9 @@ var cards: Dictionary = {
 		"description" : "There has been an accident in one of the bathrooms, should we get rid of the culprit.",
 		"image" : "res://assets/visual/janitor2.png",
 		"one-off" : false,
-		"left" : { "one": -50, "two": 0, "three": -0, "four": 0, },
+		"left" : { "one": 0, "two": -20, "three": -0, "four": 0, },
 		"left add" : [],
-		"right" : { "one": 0, "two": -20, "three": 0, "four": 0, },
+		"right" : { "one": -50, "two": -20, "three": 0, "four": 0, },
 		"right add" : [],
 	},
 	
@@ -98,7 +98,7 @@ var cards: Dictionary = {
 		"one-off" : true,
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
-		"right" : { "one": 0, "two": 10, "three": 0, "four": 0, },
+		"right" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"right add" : [],
 	},
 	
@@ -109,7 +109,7 @@ var cards: Dictionary = {
 		"one-off" : false,
 		"left" : { "one": 10, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
-		"right" : { "one": -10, "two": 0, "three": 0, "four": 0, },
+		"right" : { "one": -40, "two": 0, "three": 0, "four": 0, },
 		"right add" : [],
 	},
 	
@@ -140,7 +140,7 @@ var cards: Dictionary = {
 		"description" : "Hi, you can count on our psychology services for your shelter population, please let them know we are available",
 		"image" : "res://assets/visual/sálaS.png",
 		"one-off" : true,
-		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"left" : { "one": -20, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
 		"right" : { "one": 10, "two": -10, "three": 0, "four": 0, },
 		"right add" : ["012"],
@@ -181,12 +181,12 @@ var cards: Dictionary = {
 
 	"015" : { #Janitor, socialist cleaning
 		"name" : janitor,
-		"description" : "Should we implement a policy of cleaning after one self in the dninig hall",
+		"description" : "Should we implement a policy of cleaning after oneself in the dninig hall",
 		"image" : "res://assets/visual/janitor2.png",
 		"one-off" : true,
 		"left" : { "one": 5, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
-		"right" : { "one": -5, "two": +20, "three": 0, "four": 0, },
+		"right" : { "one": -5, "two": 20, "three": 0, "four": 0, },
 		"right add" : [],
 	},
 
@@ -226,9 +226,9 @@ var cards: Dictionary = {
 	"019" : { #Person from outside
 		"name" : "Gina",
 		"description" : "Hi i'm from out of the country and i don't know anyone here. so practicly I'm homeless. Can i stay?",
-		"image" : "path to image",
+		"image" : "res://assets/visual/utanlandsM.png",
 		"one-off" : true,
-		"left" : { "one": 10, "two": 0, "three": 0, "four": 0, },
+		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
 		"right" : { "one": -10, "two": -10, "three": 0, "four": 0, },
 		"right add" : [],
@@ -269,12 +269,12 @@ var cards: Dictionary = {
 
 	"023" : { #Journalist end homeless seeking shelter arc
 		"name" : journalist,
-		"description" : "I heard about this place from an acquaintance. Are you responsible for it",
+		"description" : "I heard about this place from an acquaintance. Are you responsible for it, do you have time for an interview?",
 		"image" : "res://assets/visual/jurnalist.png",
 		"one-off" : true,
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
-		"right" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"right" : { "one": 0, "two": 10, "three": 0, "four": 0, },
 		"right add" : [],
 	},
 
@@ -285,7 +285,7 @@ var cards: Dictionary = {
 		"one-off" : true,
 		"left" : { "one": -150, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
-		"right" : { "one": 10, "two": 0, "three": 0, "four": 0, },
+		"right" : { "one": 10, "two": -10, "three": 0, "four": 0, },
 		"right add" : ["25"],
 	},
 
@@ -294,9 +294,9 @@ var cards: Dictionary = {
 		"description" : "I have always been passsionate about art, I sure wish there were some art supplies available",
 		"image" : "res://assets/visual/listaamaður.png",
 		"one-off" : true,
-		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"left" : { "one": -10, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
-		"right" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"right" : { "one": 20, "two": -20, "three": 0, "four": 0, },
 		"right add" : ["26", "16"],
 	},
 	
@@ -305,9 +305,9 @@ var cards: Dictionary = {
 		"description" : "Do you think it's okay to have an art show here, I've painted some pictures.",
 		"image" : "res://assets/visual/listaamaður.png",
 		"one-off" : true,
-		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"left" : { "one": -20, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
-		"right" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"right" : { "one": 20, "two": 20, "three": 0, "four": 0, },
 		"right add" : ["27",],
 	},
 	
@@ -316,9 +316,9 @@ var cards: Dictionary = {
 		"description" : "That was a great artshow, can you tell me more about the artist?",
 		"image" : "res://assets/visual/jurnalist.png",
 		"one-off" : true,
-		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"left" : { "one": -40, "two": 20, "three": 0, "four": 0, },
 		"left add" : ["28"],
-		"right" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"right" : { "one": 20, "two": 20, "three": 0, "four": 0, },
 		"right add" : ["28", "29"],
 	},
 	
@@ -327,9 +327,9 @@ var cards: Dictionary = {
 		"description" : "My last article got some attention, keep up the good work",
 		"image" : "res://assets/visual/jurnalist.png",
 		"one-off" : true,
-		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"left" : { "one": 20, "two": 30, "three": 0, "four": 0, },
 		"left add" : [],
-		"right" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"right" : { "one": 20, "two": 30, "three": 0, "four": 0, },
 		"right add" : [],
 	},
 	
@@ -338,9 +338,9 @@ var cards: Dictionary = {
 		"description" : "Thank you for speaking so well of me, I got an oportunity for a project",
 		"image" : "res://assets/visual/listaamaður.png",
 		"one-off" : true,
-		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"left" : { "one": 30, "two": 0, "three": 0, "four": 0, },
 		"left add" : ["30"],
-		"right" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"right" : { "one": 30, "two": 0, "three": 0, "four": 0, },
 		"right add" : ["30",],
 	},
 	
@@ -349,9 +349,9 @@ var cards: Dictionary = {
 		"description" : "I think it's time for me to move on from here, Thank you for all the help",
 		"image" : "res://assets/visual/listaamaður.png",
 		"one-off" : true,
-		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"left" : { "one": 50, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
-		"right" : { "one": 0, "two": 0, "three": 0, "four": 0, },
+		"right" : { "one": 50, "two": 0, "three": 0, "four": 0, },
 		"right add" : [],
 	},
 }

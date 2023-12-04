@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://c46jwf0l2uv88"]
+[gd_scene load_steps=6 format=3 uid="uid://c46jwf0l2uv88"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_5teni"]
 [ext_resource type="Theme" uid="uid://hhpmuodgunsr" path="res://assets/card.tres" id="1_p2l0n"]
+[ext_resource type="AudioStream" uid="uid://k3kawkl5hxh0" path="res://assets/sound/punk.mp3" id="3_ubrb3"]
+[ext_resource type="Texture2D" uid="uid://dfotrsg0ews88" path="res://assets/visual/forsíðu mynd.png" id="4_cpcxi"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_fm4d0"]
+streams_count = 1
+stream_0/stream = ExtResource("3_ubrb3")
+stream_0/weight = 1.0
 
 [node name="main_menu" type="Node2D"]
 script = ExtResource("1_5teni")
@@ -39,7 +46,7 @@ size_flags_stretch_ratio = 2.0
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
-text = "Start game"
+text = "Start"
 flat = true
 alignment = 0
 icon_alignment = 1
@@ -53,6 +60,7 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
+focus_mode = 0
 text = "Fullscreen"
 flat = true
 alignment = 0
@@ -81,6 +89,11 @@ offset_bottom = 1095.0
 color = Color(0, 0, 0, 1)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_fm4d0")
+
+[node name="ForsíðuMynd" type="Sprite2D" parent="."]
+position = Vector2(1232, 666)
+texture = ExtResource("4_cpcxi")
 
 [connection signal="button_down" from="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/Button" to="." method="_on_button_button_down"]
 [connection signal="button_down" from="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/Button2" to="." method="_on_button_2_button_down"]

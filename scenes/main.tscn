@@ -1,10 +1,22 @@
-[gd_scene load_steps=6 format=3 uid="uid://cbii4ugrdfk6b"]
+[gd_scene load_steps=10 format=3 uid="uid://cbii4ugrdfk6b"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_rrjrh"]
 [ext_resource type="Script" path="res://scripts/resources.gd" id="2_086y0"]
 [ext_resource type="Theme" uid="uid://hhpmuodgunsr" path="res://assets/card.tres" id="2_md8wk"]
 [ext_resource type="Texture2D" uid="uid://yq7ikd5u07bh" path="res://assets/visual/bar_under.png" id="3_cfbur"]
 [ext_resource type="Texture2D" uid="uid://3fkhhpuic8me" path="res://assets/visual/bar_fill.png" id="4_m63l8"]
+[ext_resource type="AudioStream" uid="uid://3plt68vwjbhw" path="res://assets/sound/card-sounds-35956.mp3" id="6_nnygx"]
+[ext_resource type="AudioStream" uid="uid://bj0dylq2amkak" path="res://assets/sound/flipcard-91468.mp3" id="7_6pvm6"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_48pem"]
+streams_count = 1
+stream_0/stream = ExtResource("6_nnygx")
+stream_0/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_f1yvg"]
+streams_count = 1
+stream_0/stream = ExtResource("7_6pvm6")
+stream_0/weight = 1.0
 
 [node name="main" type="Node2D"]
 position = Vector2(0, 4)
@@ -39,7 +51,7 @@ script = ExtResource("2_086y0")
 
 [node name="Label" type="Label" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
-text = "Safety"
+text = "Satisfaction"
 horizontal_alignment = 1
 vertical_alignment = 2
 
@@ -120,6 +132,10 @@ texture_under = ExtResource("3_cfbur")
 texture_progress = ExtResource("4_m63l8")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_48pem")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_f1yvg")
 
 [connection signal="left" from="." to="CanvasLayer/MarginContainer/resources" method="_on_main_left"]
 [connection signal="right" from="." to="CanvasLayer/MarginContainer/resources" method="_on_main_right"]

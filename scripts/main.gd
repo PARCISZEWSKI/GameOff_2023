@@ -55,14 +55,18 @@ func player_actions(checker: String) -> void:
 		add_to_discard("left add")
 		add_to_deck()
 		card_spawn()
-		$AudioStreamPlayer.play()
+		$AudioStreamPlayer2.play()
+		#print(deck_current)
+		#print(deck_discard)
 	
 	if Input.is_action_just_pressed("right_arrow") or checker == "right":
 		emit_signal("right", CardData.cards[card_current_key]["right"])
 		add_to_discard("right add")
 		add_to_deck()
 		card_spawn()
-		$AudioStreamPlayer.play()
+		$AudioStreamPlayer2.play()
+		#print(deck_current)
+		#print(deck_discard)
 		
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
@@ -72,6 +76,7 @@ func player_actions(checker: String) -> void:
 func add_to_deck() -> void:
 	if len(deck_current) < 1:
 		deck_current = deck_discard
+		deck_discard = []
 
 
 func add_to_discard(choice_side: String = "") -> void:
@@ -91,6 +96,8 @@ func _on_resources_empty_bar(reason):
 func card_swipe(delta) -> String:
 	var card_center = card_current.global_position.x + card_current.size.x/2
 	if Input.is_action_pressed("left_mouse"):
+		if Input.is_action_just_pressed("left_mouse"):
+			$AudioStreamPlayer.play()
 		if mouse_over_card or dragging:
 			dragging = true 
 			#mouse_over_card:
@@ -102,14 +109,14 @@ func card_swipe(delta) -> String:
 		return ""
 	if Input.is_action_just_released("left_mouse"):
 		dragging = false
-		if (card_center) > card_initial_position_center + card_current.size.x*3/4:
-			print("What the fuck right")
+		if (card_center) > card_initial_position_center + card_current.size.x*2/4:
+			#print("What the fuck right")
 			return "right"
-		elif (card_center) < card_initial_position_center - card_current.size.x*3/4:# - card_current.size.x:
-			print("What the fuck left")
+		elif (card_center) < card_initial_position_center - card_current.size.x*2/4:# - card_current.size.x:
+			#print("What the fuck left")
 			return "left"
 		else:
-			print("What the fuck init")
+			#print("What the fuck init")
 			card_current.position = card_initial_position
 			return ""
 	return ""
