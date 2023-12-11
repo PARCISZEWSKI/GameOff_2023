@@ -51,6 +51,7 @@ script = ExtResource("2_086y0")
 
 [node name="Label" type="Label" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 34
 text = "Satisfaction"
 horizontal_alignment = 1
 vertical_alignment = 2
@@ -73,6 +74,7 @@ size_flags_stretch_ratio = 5.0
 
 [node name="Label2" type="Label" parent="CanvasLayer/MarginContainer/resources"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 34
 text = "Finances"
 horizontal_alignment = 1
 vertical_alignment = 2
@@ -94,12 +96,14 @@ size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
 
 [node name="Label3" type="Label" parent="CanvasLayer/MarginContainer/resources"]
+visible = false
 layout_mode = 2
 text = "Social Standing"
 horizontal_alignment = 1
 vertical_alignment = 2
 
 [node name="three" type="TextureProgressBar" parent="CanvasLayer/MarginContainer/resources"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 6
@@ -110,18 +114,21 @@ texture_under = ExtResource("3_cfbur")
 texture_progress = ExtResource("4_m63l8")
 
 [node name="filler3" type="Control" parent="CanvasLayer/MarginContainer/resources"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
 
 [node name="Label4" type="Label" parent="CanvasLayer/MarginContainer/resources"]
+visible = false
 layout_mode = 2
 text = "Attention"
 horizontal_alignment = 1
 vertical_alignment = 2
 
 [node name="four" type="TextureProgressBar" parent="CanvasLayer/MarginContainer/resources"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 6

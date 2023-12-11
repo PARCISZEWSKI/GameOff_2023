@@ -74,7 +74,7 @@ func player_actions(checker: String) -> void:
 
 
 func add_to_deck() -> void:
-	if len(deck_current) == 0:
+	if len(deck_current) < 1:
 		deck_current = deck_discard
 		deck_discard = []
 

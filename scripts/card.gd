@@ -9,7 +9,7 @@ func _ready():
 	pass
 	
 func setcard(card_key) -> void:
-	#print(card_key, typeof(card_key))
+	print(card_key, typeof(cards[card_key]), cards[card_key])
 	
 	$MarginContainer/VBoxContainer/Label.text = cards[card_key]["description"]
 	$MarginContainer/VBoxContainer/Label2.text = cards[card_key]["name"]

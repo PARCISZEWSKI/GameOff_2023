@@ -55,7 +55,7 @@ var cards: Dictionary = {
 		"left" : { "one": -40, "two": 0, "three": 10, "four": -10, },
 		"left add" : [],
 		"right" : { "one": 20, "two": -20, "three": -20, "four": 0, },
-		"right add" : ["023", "24"],
+		"right add" : ["023", "024"],
 	},
 	
 	"004" : { #Homeless angry about hotel
@@ -77,7 +77,7 @@ var cards: Dictionary = {
 		"left" : { "one": 0, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
 		"right" : { "one": 10, "two": 10, "three": 0, "four": 0, },
-		"right add" : ["20",],
+		"right add" : ["020"],
 	},
 	
 	"006" : { #Janitor wanting to throw people out
@@ -242,7 +242,7 @@ var cards: Dictionary = {
 		"left" : { "one": -10, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
 		"right" : { "one": 20, "two": 10, "three": 0, "four": 0, },
-		"right add" : ["21"],
+		"right add" : ["021"],
 	},
 
 	"021" : { #girl young class donation
@@ -253,7 +253,7 @@ var cards: Dictionary = {
 		"left" : { "one": -10, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
 		"right" : { "one": 20, "two": 10, "three": 0, "four": 0, },
-		"right add" : ["22"],
+		"right add" : ["022"],
 	},
 
 	"022" : { #Jounralist end girl arc
@@ -286,7 +286,7 @@ var cards: Dictionary = {
 		"left" : { "one": -150, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
 		"right" : { "one": 10, "two": -10, "three": 0, "four": 0, },
-		"right add" : ["25"],
+		"right add" : ["025"],
 	},
 
 	"025" : { #Artist art supplies
@@ -297,7 +297,7 @@ var cards: Dictionary = {
 		"left" : { "one": -10, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
 		"right" : { "one": 20, "two": -20, "three": 0, "four": 0, },
-		"right add" : ["26", "16"],
+		"right add" : ["026", "016"],
 	},
 	
 	"026" : { #Artist art show
@@ -308,7 +308,7 @@ var cards: Dictionary = {
 		"left" : { "one": -20, "two": 0, "three": 0, "four": 0, },
 		"left add" : [],
 		"right" : { "one": 20, "two": 20, "three": 0, "four": 0, },
-		"right add" : ["27",],
+		"right add" : ["027"],
 	},
 	
 	"027" : { #Journalist art show
@@ -317,9 +317,9 @@ var cards: Dictionary = {
 		"image" : "res://assets/visual/jurnalist.png",
 		"one-off" : true,
 		"left" : { "one": -40, "two": 20, "three": 0, "four": 0, },
-		"left add" : ["28"],
+		"left add" : ["028"],
 		"right" : { "one": 20, "two": 20, "three": 0, "four": 0, },
-		"right add" : ["28", "29"],
+		"right add" : ["028", "029"],
 	},
 	
 	"028" : { #journalist last article
@@ -339,9 +339,9 @@ var cards: Dictionary = {
 		"image" : "res://assets/visual/listaamaður.png",
 		"one-off" : true,
 		"left" : { "one": 30, "two": 0, "three": 0, "four": 0, },
-		"left add" : ["30"],
+		"left add" : ["030"],
 		"right" : { "one": 30, "two": 0, "three": 0, "four": 0, },
-		"right add" : ["30",],
+		"right add" : ["030"],
 	},
 	
 	"030" : { #Artist leaving
